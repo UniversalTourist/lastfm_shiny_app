@@ -1,4 +1,4 @@
-#
+#Last.fm Analysis
 library(tidyverse)
 library(lubridate)
 #clean lastfm data
@@ -23,3 +23,7 @@ clean_data <- samcohen_lastfm_data  %>%
           weekday_or_not = case_when(weekday %in% c("Sat", "Sun") ~ "Weekend",
                                      TRUE ~ "Weekday"))   
   #write_csv("clean_lastfm_data.csv")
+
+
+
+
